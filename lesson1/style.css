@@ -1,0 +1,36 @@
+/* 
+.container {
+    display: grid;
+    grid-template-columns: 100px 150px auto;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    hàng cột
+    grid-gap: 10px 10px;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+} */
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+
+.container > div {
+    background-color: aquamarine;
+    /* padding: 10px; */
+    font-size: 20px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.item1, .item6, .item8 {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1 / span 2;
+}
